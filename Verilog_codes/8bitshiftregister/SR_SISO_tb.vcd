@@ -1,5 +1,5 @@
 $date
-	Sat Aug 22 16:33:09 2020
+	Sat Aug 22 20:19:21 2020
 $end
 $version
 	Icarus Verilog
@@ -13,52 +13,77 @@ $var reg 1 " clk $end
 $var reg 1 # inp $end
 $var reg 1 $ reset $end
 $scope module srsiso $end
-$var wire 1 % clk $end
-$var wire 1 & d $end
+$var wire 1 " clk $end
+$var wire 1 # d $end
+$var wire 1 $ reset $end
+$var wire 1 % w7 $end
+$var wire 1 & w6 $end
+$var wire 1 ' w5 $end
+$var wire 1 ( w4 $end
+$var wire 1 ) w3 $end
+$var wire 1 * w2 $end
+$var wire 1 + w1 $end
 $var wire 1 ! q $end
-$var wire 1 ' reset $end
-$var wire 1 ( w1 $end
-$var wire 1 ) w2 $end
-$var wire 1 * w3 $end
 $scope module dff_1 $end
-$var wire 1 % clk $end
-$var wire 1 & d $end
-$var wire 1 ' reset $end
+$var wire 1 " clk $end
+$var wire 1 # d $end
+$var wire 1 $ reset $end
 $var reg 1 + q $end
 $upscope $end
 $scope module dff_2 $end
-$var wire 1 % clk $end
-$var wire 1 ( d $end
-$var wire 1 ' reset $end
-$var reg 1 , q $end
+$var wire 1 " clk $end
+$var wire 1 + d $end
+$var wire 1 $ reset $end
+$var reg 1 * q $end
 $upscope $end
 $scope module dff_3 $end
-$var wire 1 % clk $end
-$var wire 1 ) d $end
-$var wire 1 ' reset $end
-$var reg 1 - q $end
+$var wire 1 " clk $end
+$var wire 1 * d $end
+$var wire 1 $ reset $end
+$var reg 1 ) q $end
 $upscope $end
 $scope module dff_4 $end
-$var wire 1 % clk $end
-$var wire 1 * d $end
-$var wire 1 ' reset $end
-$var reg 1 . q $end
+$var wire 1 " clk $end
+$var wire 1 ) d $end
+$var wire 1 $ reset $end
+$var reg 1 ( q $end
+$upscope $end
+$scope module dff_5 $end
+$var wire 1 " clk $end
+$var wire 1 ( d $end
+$var wire 1 $ reset $end
+$var reg 1 ' q $end
+$upscope $end
+$scope module dff_6 $end
+$var wire 1 " clk $end
+$var wire 1 ' d $end
+$var wire 1 $ reset $end
+$var reg 1 & q $end
+$upscope $end
+$scope module dff_7 $end
+$var wire 1 " clk $end
+$var wire 1 & d $end
+$var wire 1 $ reset $end
+$var reg 1 % q $end
+$upscope $end
+$scope module dff_8 $end
+$var wire 1 " clk $end
+$var wire 1 % d $end
+$var wire 1 $ reset $end
+$var reg 1 ! q $end
 $upscope $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-x.
-x-
-x,
 0+
 x*
 x)
-0(
-0'
-0&
-0%
+x(
+x'
+x&
+x%
 0$
 0#
 0"
@@ -66,155 +91,110 @@ x!
 $end
 #5
 1"
-1%
 #10
-0,
-0)
+0*
 1+
-1(
 1#
-1&
 0"
-0%
 #15
 1"
-1%
 #20
 0+
-0(
-1,
-1)
-0-
-0*
+1*
+0)
 0#
-0&
 0"
-0%
 #25
 1"
-1%
 #30
-0.
-0!
-1-
-1*
-0,
-0)
+0(
+1)
+0*
 1+
-1(
 1#
-1&
 0"
-0%
 #35
 1"
-1%
 #40
 0+
-0(
-1,
-1)
-0-
-0*
-1.
-1!
+1*
+0)
+1(
+0'
 0#
-0&
 0"
-0%
 #45
 1"
-1%
 #50
-0.
-0!
-1-
-1*
-0,
-0)
+0&
+1'
+0(
+1)
+0*
 1+
-1(
 1#
-1&
 0"
-0%
 #55
 1"
-1%
 #60
 0+
-0(
-1,
-1)
-0-
-0*
-1.
-1!
-0#
-0&
-0"
+1*
+0)
+1(
+0'
+1&
 0%
+0#
+0"
 #65
 1"
-1%
 #70
-0.
 0!
-1-
-1*
-0,
-0)
+1%
+0&
+1'
+0(
+1)
+0*
 1+
-1(
 1#
-1&
 0"
-0%
 #75
 1"
-1%
 #80
 0+
-0(
-1,
-1)
-0-
-0*
-1.
+1*
+0)
+1(
+0'
+1&
+0%
 1!
 0#
-0&
 0"
-0%
 #85
 1"
-1%
 #90
-0.
 0!
-1-
-1*
-0,
-0)
+1%
+0&
+1'
+0(
+1)
+0*
 1+
-1(
 1#
-1&
 0"
-0%
 #95
 1"
-1%
 #100
 0+
-0(
-1,
-1)
-0-
-0*
-1.
+1*
+0)
+1(
+0'
+1&
+0%
 1!
 0#
-0&
 0"
-0%

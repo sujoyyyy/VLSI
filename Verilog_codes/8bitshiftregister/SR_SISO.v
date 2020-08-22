@@ -19,11 +19,15 @@ module SR_SISO(d,clk,reset,q);
 input d, clk, reset;
 output q;
 
-wire w1, w2, w3;
+wire w1, w2, w3,w4,w5,w6,w7;
 
 DFF dff_1(d, clk, reset, w1);
 DFF dff_2(w1, clk, reset, w2);
 DFF dff_3(w2, clk, reset, w3);
-DFF dff_4(w3, clk, reset, q);
+DFF dff_4(w3, clk, reset, w4);
+DFF dff_5(w4, clk, reset, w5);
+DFF dff_6(w5, clk, reset, w6);
+DFF dff_7(w6, clk, reset, w7);
+DFF dff_8(w7, clk, reset, q);
 
 endmodule
