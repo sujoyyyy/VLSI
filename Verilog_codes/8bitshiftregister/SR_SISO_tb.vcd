@@ -1,5 +1,5 @@
 $date
-	Sat Aug 22 20:19:21 2020
+	Sun Aug 23 11:31:09 2020
 $end
 $version
 	Icarus Verilog
@@ -16,17 +16,52 @@ $scope module srsiso $end
 $var wire 1 " clk $end
 $var wire 1 # d $end
 $var wire 1 $ reset $end
-$var wire 1 % w7 $end
-$var wire 1 & w6 $end
-$var wire 1 ' w5 $end
-$var wire 1 ( w4 $end
+$var wire 1 % w1 $end
+$var wire 1 ! q $end
+$scope module S1 $end
+$var wire 1 " clk $end
+$var wire 1 # d $end
+$var wire 1 $ reset $end
+$var wire 1 & w3 $end
+$var wire 1 ' w2 $end
+$var wire 1 ( w1 $end
+$var wire 1 % q $end
+$scope module dff_1 $end
+$var wire 1 " clk $end
+$var wire 1 # d $end
+$var wire 1 $ reset $end
+$var reg 1 ( q $end
+$upscope $end
+$scope module dff_2 $end
+$var wire 1 " clk $end
+$var wire 1 ( d $end
+$var wire 1 $ reset $end
+$var reg 1 ' q $end
+$upscope $end
+$scope module dff_3 $end
+$var wire 1 " clk $end
+$var wire 1 ' d $end
+$var wire 1 $ reset $end
+$var reg 1 & q $end
+$upscope $end
+$scope module dff_4 $end
+$var wire 1 " clk $end
+$var wire 1 & d $end
+$var wire 1 $ reset $end
+$var reg 1 % q $end
+$upscope $end
+$upscope $end
+$scope module S2 $end
+$var wire 1 " clk $end
+$var wire 1 % d $end
+$var wire 1 $ reset $end
 $var wire 1 ) w3 $end
 $var wire 1 * w2 $end
 $var wire 1 + w1 $end
 $var wire 1 ! q $end
 $scope module dff_1 $end
 $var wire 1 " clk $end
-$var wire 1 # d $end
+$var wire 1 % d $end
 $var wire 1 $ reset $end
 $var reg 1 + q $end
 $upscope $end
@@ -46,41 +81,18 @@ $scope module dff_4 $end
 $var wire 1 " clk $end
 $var wire 1 ) d $end
 $var wire 1 $ reset $end
-$var reg 1 ( q $end
-$upscope $end
-$scope module dff_5 $end
-$var wire 1 " clk $end
-$var wire 1 ( d $end
-$var wire 1 $ reset $end
-$var reg 1 ' q $end
-$upscope $end
-$scope module dff_6 $end
-$var wire 1 " clk $end
-$var wire 1 ' d $end
-$var wire 1 $ reset $end
-$var reg 1 & q $end
-$upscope $end
-$scope module dff_7 $end
-$var wire 1 " clk $end
-$var wire 1 & d $end
-$var wire 1 $ reset $end
-$var reg 1 % q $end
-$upscope $end
-$scope module dff_8 $end
-$var wire 1 " clk $end
-$var wire 1 % d $end
-$var wire 1 $ reset $end
 $var reg 1 ! q $end
+$upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-0+
+x+
 x*
 x)
-x(
+0(
 x'
 x&
 x%
@@ -92,83 +104,83 @@ $end
 #5
 1"
 #10
-0*
-1+
+0'
+1(
 1#
 0"
 #15
 1"
 #20
-0+
-1*
-0)
+0(
+1'
+0&
 0#
 0"
 #25
 1"
 #30
-0(
-1)
-0*
-1+
+0%
+1&
+0'
+1(
 1#
 0"
 #35
 1"
 #40
+0(
+1'
+0&
+1%
 0+
-1*
-0)
-1(
-0'
 0#
 0"
 #45
 1"
 #50
-0&
-1'
-0(
-1)
 0*
 1+
+0%
+1&
+0'
+1(
 1#
 0"
 #55
 1"
 #60
+0(
+1'
+0&
+1%
 0+
 1*
 0)
-1(
-0'
-1&
-0%
 0#
 0"
 #65
 1"
 #70
 0!
-1%
-0&
-1'
-0(
 1)
 0*
 1+
+0%
+1&
+0'
+1(
 1#
 0"
 #75
 1"
 #80
+0(
+1'
+0&
+1%
 0+
 1*
 0)
-1(
-0'
-1&
-0%
 1!
 0#
 0"
@@ -176,25 +188,25 @@ $end
 1"
 #90
 0!
-1%
-0&
-1'
-0(
 1)
 0*
 1+
+0%
+1&
+0'
+1(
 1#
 0"
 #95
 1"
 #100
+0(
+1'
+0&
+1%
 0+
 1*
 0)
-1(
-0'
-1&
-0%
 1!
 0#
 0"

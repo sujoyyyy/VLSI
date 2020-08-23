@@ -13,7 +13,7 @@ initial
 		$dumpvars(0, SR_SISO_tb);
 	end
 
-SR_SISO srsiso(inp, clk, reset, q);
+SR_SISO_eight srsiso(inp, clk, reset, q);
 
 
 initial
