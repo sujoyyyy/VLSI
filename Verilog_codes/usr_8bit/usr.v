@@ -8,13 +8,14 @@ module DFF(Q,D,clk);
 	nand nand00(w0, w1, w3);
 	nand nand01(w1, w0, clk);
 	nand nand10(w2, w1, w3, clk);
+
 	nand nand11(w3, w2, D);
 	nand nand1_0(Q, w1, Q_bar);
 	nand nand1_1(Q_bar, w2, Q);
 
 endmodule
 
-// a 4X1 MUX to perform operation according to user input, 00- do nothing, 01- right shift, 10- left shift, 11- write;
+// a 4X1 MUX to perform operation according to user input, 00- do nothing, 01- right shift, 10- left shift, 11- parallel load;
 module mux_4_1 (out, in0, in1, in2, in3, select);
 
 	input in0,in1,in2,in3;
@@ -56,7 +57,7 @@ module USR_4bit(out, pload, L_in, R_in, select, clk);
 	mux_4_1 mx0(w0, out[0], out[1], L_in,pload[0], select);
 
 endmodule
-//universal shift register in 8 bits using bottom up approach
+
 //universal shift register in 8 bits using bottom up approach
 module USR_8bit(out, pload, L_in, R_in, select, clk);
 
