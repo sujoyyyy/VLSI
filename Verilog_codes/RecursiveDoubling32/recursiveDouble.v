@@ -28,7 +28,7 @@ module CLA(A, B, Sum, iniC, Carry);
 		o = 6'b000001;//Loop variable---6 bit 32	
 		//bit i
 		/*
-		Kpg calculation takes place here for all the 15 bits
+		Kpg calculation takes place here for all the 32 bits
 		*/
 		while(o<=31)
 		begin
@@ -52,10 +52,10 @@ module CLA(A, B, Sum, iniC, Carry);
 		
 		while(i<32)//i is number of shifts 
 			begin
-				j=i;//J is used to calculate along the whole array the prefix sum of j and j-i
+				j=i;           //j is used to calculate along the whole array the prefix sum of j and j-i
 				while(j<32)
 					begin
-						inaccess1 = kgp_t1[j-i];//Each bit calculations
+						inaccess1 = kgp_t1[j-i];      //Each bit calculations
 						inaccess2 = kgp_t2[j];
 						access[1] = inaccess1[1] & inaccess2[0] | inaccess2[1];
 						access[0] = inaccess1[0] & inaccess2[0] | inaccess2[1];
