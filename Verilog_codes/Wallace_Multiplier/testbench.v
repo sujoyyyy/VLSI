@@ -9,9 +9,13 @@ wallace test (a, b, out);
 
 initial
 begin
-	a = 32'd1289;
-	b = 32'd11;
+	a = 32'd1774;
+	b = 32'd19;
 	#10$display("  a=%d\n  b=%d\nout=%d", a, b, out);
 end
-
+initial
+begin
+    $dumpfile("wallace.vcd");      
+    $dumpvars;
+end    
 endmodule
