@@ -20,8 +20,8 @@ end
 
 initial
  begin
-	$display("NOTE:\n4 seconds of delay\n\n"); 
- 	$monitor($time," Input bts:Multiplier=%d and Multiplicand =%d;\n\t\t\t\tOutput:\n\t\t\t\tExponential form=%e\n\t\t\t\tDecimal form=%d\n",a,b,c,c);
+	$display("NOTE:\n4 seconds of delay. The reason behind this is that 16 bit multiplier has 4 levels. Every level gets initialised at the same time of beginning but uses output from the previous level as an input.\n\n"); 
+ 	$monitor($time," Input bts:Multiplier=%d and Multiplicand =%d;\n\t\t\t\tOutput:\n\t\t\t\tDecimal form=%d\n",a,b,c);
  	$dumpfile("dadda.vcd");
  	$dumpvars; 
  
